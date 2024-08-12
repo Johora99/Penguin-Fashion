@@ -1,0 +1,83 @@
+@media screen and (max-width:576px) {
+    .container-fluid.header{
+    header{
+        nav{
+            .container{
+                > a{
+                    img{
+                        width: 200px;
+                        height: 30px;
+
+                    }
+                }
+            }
+        }
+         .banner{
+            .sub-banner{
+
+                .banner-content{
+                  h1{
+                    @include heading($color:$Yellow,$font-size:3.75rem,$line-height:3.75rem);
+                    }
+                }
+                .banner-img {
+            width: 500px;
+            height: 500px;
+           background-image: url("../assets/Group\ 33091.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            position: relative;
+           
+            img{
+                position: relative;
+                transform: translate(3%, 3%);
+            }
+           }
+            }
+           
+    }
+}
+    
+    }
+    main{
+
+    .card-section {
+     .sub-card-section{
+        h2{
+          font-size: 2.25rem;
+          text-align: center;
+        }
+        .card-section{
+            flex-direction: column;
+            }
+        }
+     }
+    }
+    footer{
+    margin: 10rem auto;
+   .footer-section{
+    display: flex;
+    .footer-right{
+        order: 2;
+        margin-top: 2rem;
+        .pop-1{
+            width: 100%;
+            .sub-pop{
+                padding: 2rem;
+              flex-flow: column wrap;
+              text-align: center;
+
+            }
+        }
+    }
+    .footer-left {
+        order: 1;
+        display: flex;
+        margin-bottom: 5rem;
+   }
+        }
+    
+
+    }
+}

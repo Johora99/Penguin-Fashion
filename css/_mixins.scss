@@ -1,0 +1,78 @@
+@mixin text($color:$Black_lighter,$f-weight:400){
+    color: $color;
+font-size: 1rem;
+font-weight: $f-weight;
+line-height: 1.5rem;
+@extend .roboto-regular;
+}
+@mixin heading($color:$Blue_deep,$font-size,$line-height){
+    color: $color ;
+font-size: $font-size;
+font-weight: 700;
+line-height:$line-height ;
+@extend .bebas-neue-regular;
+}
+@mixin btn{
+      background: linear-gradient(180.00deg, rgb(164, 188, 70),rgb(133, 160, 25) 100%);
+      border: none;
+      @include text($color:$White-primary,$f-weight:500);
+       position: relative;
+    border: 3px solid $Lemon_color;
+    cursor: pointer;
+   
+}
+@mixin btn-after{
+    content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        bottom: -2px;
+        right: -2px;
+         background-image: linear-gradient(180.00deg, rgb(164, 188, 70),rgb(133, 160, 25) 100%);
+         z-index: -1;
+         background-clip: padding-box;
+}
+@mixin bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+@mixin card-title{
+color: $Blue_deep;
+font-size: 3rem;
+font-weight: 700;
+line-height: 3rem;
+ margin: 3rem auto;
+ text-transform: uppercase;
+}
+@mixin card{
+     border-radius: 20px;   
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);    
+     background: $White-primary;  
+}
+@mixin card-img{
+     height: 450px;
+          border-radius: 1.25rem;
+          background: $card-bg;
+          padding: 2rem;
+}
+@mixin img{
+    width: 100%;
+    height: 100%;
+}
+@mixin card-text{
+           color: $Blue_deep;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.75rem;
+            margin: 1rem auto;
+
+}
+@mixin card-price{
+            color: $Yellow;
+            font-size: 2.25rem;
+            font-weight: 900;
+            line-height: 2.6rem;
+            vertical-align: middle
+
+}
